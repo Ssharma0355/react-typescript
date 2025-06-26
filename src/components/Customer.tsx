@@ -1,9 +1,17 @@
 import React from "react";
 
-let Customer: React.FC = ()=>{
+
+//props handling in Typescript
+interface IPROPS{
+    name:String;
+    age:String;
+}
+
+let Customer: React.FC<IPROPS> = ({name,age})=>{
     return(
         <div>
-            <h1>Sachin</h1>
+            <h1>Name: {name}</h1>
+            <h2>Age: {age}</h2>
         </div>
     )
 }

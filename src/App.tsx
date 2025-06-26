@@ -9,9 +9,8 @@ function App() {
   }
   return (
     <div>
-      <h1 className='bg-dark' style={bg}>Helo Sachin</h1>
-      <h2>Sachin</h2>
-      <Customer />
+      <h1 className='bg-dark' style={bg}>Props</h1>
+      <Customer name="Sachin" age="23" />
     </div>
   );
 }
