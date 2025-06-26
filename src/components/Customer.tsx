@@ -5,6 +5,7 @@ import React from "react";
 interface IPROPS{
     name:String;
     age:String;
+    title?:String; //optional property
 }
 
 let Customer: React.FC<IPROPS> = ({name,age})=>{
