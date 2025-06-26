@@ -1,13 +1,10 @@
 import React from "react";
-
-
 //props handling in Typescript
 interface IPROPS{
     name:String;
     age:String;
     title?:String; //optional property
 }
-
 let Customer: React.FC<IPROPS> = ({name,age})=>{
     return(
         <div>
@@ -16,5 +13,4 @@ let Customer: React.FC<IPROPS> = ({name,age})=>{
         </div>
     )
 }
-
 export default Customer;
