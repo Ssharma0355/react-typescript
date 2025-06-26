@@ -3,6 +3,7 @@ import './App.css';
 import Customer from './components/Customer';
 import UsersClass  from './components/UsersClass';
 import { HandleState } from './components/HandleState';
+import HandleStateClass from './components/HandleStateClass';
 
 function App() {
   let bg={
@@ -15,6 +16,7 @@ function App() {
       <Customer name="Sachin" age={23} />
       <UsersClass userId={123} />
       <HandleState />
+      <HandleStateClass />
     </div>
   );
 }
