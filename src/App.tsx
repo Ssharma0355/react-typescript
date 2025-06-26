@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <h1 className='bg-dark' style={bg}>Props</h1>
-      <Customer name="Sachin" age="23" />
+      <Customer name="Sachin" age={23} />
     </div>
   );
 }
