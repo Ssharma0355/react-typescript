@@ -9,6 +9,7 @@ import { PracticeCounter } from './practice/PracticeCounter';
 import { FunctionParameter } from './components/FunctionParameter';
 import { Login } from './components/Login';
 import { ConditionalRendering } from './components/ConditionalRendering';
+import { Looping } from './components/Looping';
 
 function App() {
   let bg={
@@ -30,7 +31,8 @@ function App() {
       {/* <FunctionParameter /> */}
 
       {/* <Login /> */}
-      <ConditionalRendering />
+      {/* <ConditionalRendering /> */}
+      <Looping />
     </div>
   );
 }
