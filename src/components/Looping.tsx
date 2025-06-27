@@ -4,7 +4,6 @@ import { UsersList } from "../practice/UserList";
 interface TState{
     users:UsersList[];
 }
-
 export const Looping : React.FC=()=>{
     const [state, setState] = useState<TState>({
       users: [
@@ -31,8 +30,7 @@ export const Looping : React.FC=()=>{
                   <td>{users.name}</td>
                   <td>{users.email}</td>
                 </tr>
-              );
-            })}
+              );})}
         </table>
       </div>
     );
