@@ -7,6 +7,7 @@ import HandleStateClass from './components/HandleStateClass';
 import { Counter } from './components/Counter';
 import { PracticeCounter } from './practice/PracticeCounter';
 import { FunctionParameter } from './components/FunctionParameter';
+import { Login } from './components/Login';
 
 function App() {
   let bg={
@@ -25,7 +26,8 @@ function App() {
       {/* <Counter />
       <PracticeCounter /> */}
 
-      <FunctionParameter />
+      {/* <FunctionParameter /> */}
+      <Login />
     </div>
   );
 }
