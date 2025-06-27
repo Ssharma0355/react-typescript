@@ -11,6 +11,7 @@ import { Login } from './components/Login';
 import { ConditionalRendering } from './components/ConditionalRendering';
 import { Looping } from './components/Looping';
 import { DisplayUsers } from './components/DisplayUsers';
+import { ShowUsers } from './components/ShowUsers';
 
 function App() {
   let bg={
@@ -34,7 +35,9 @@ function App() {
       {/* <Login /> */}
       {/* <ConditionalRendering /> */}
       {/* <Looping /> */}
-      <DisplayUsers />
+      {/* <DisplayUsers /> */}
+
+      <ShowUsers />
     </div>
   );
 }
