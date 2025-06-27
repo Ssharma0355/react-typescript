@@ -4,10 +4,10 @@ interface IState{
 }
 export let PracticeCounter: React.FC =()=>{
     const [state, setState] = useState<IState>({count:0})
-    const Increment =()=>{
+    const Increment =():void=>{
         setState({count:state.count+1});
     }
-    const Decrement=()=>{
+    const Decrement=():void=>{
         setState({count:state.count-1});
     }
  return (

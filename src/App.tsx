@@ -6,6 +6,7 @@ import { HandleState } from './components/HandleState';
 import HandleStateClass from './components/HandleStateClass';
 import { Counter } from './components/Counter';
 import { PracticeCounter } from './practice/PracticeCounter';
+import { FunctionParameter } from './components/FunctionParameter';
 
 function App() {
   let bg={
@@ -19,8 +20,12 @@ function App() {
       <UsersClass userId={123} />
       <HandleState />
       <HandleStateClass /> */}
-      <Counter />
-      <PracticeCounter />
+
+
+      {/* <Counter />
+      <PracticeCounter /> */}
+
+      <FunctionParameter />
     </div>
   );
 }
