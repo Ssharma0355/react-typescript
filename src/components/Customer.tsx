@@ -8,9 +8,10 @@ interface IPROPS{
 let Customer: React.FC<IPROPS> = ({name,age,title})=>{
     return (
       <div>
-        <h1>Name: {name}</h1>
-        <h1>Title: {title}</h1>
-        <h1>Age: {age}</h1>
+        <h1>Funtional Component in TypeScript</h1>
+        <h2>Name: {name}</h2>
+        <h2>Title: {title}</h2>
+        <h2>Age: {age}</h2>
       </div>
     );
 }

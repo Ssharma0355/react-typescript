@@ -1,21 +1,16 @@
 import React from "react";
-
 interface ISTATE{
     name: string;
     title: string;
 }
-
-
-
 export default class HandleStateClass extends React.Component<{},ISTATE>{
     constructor(props: {}){
         super(props);
         this.state={
-            name:"Sachin",
-            title:"Developer"
+            name:"Sachin Sharma",
+            title:"Frontend Developer"
             }
     }
-
     render(){
         const {name,title} = this.state;
         return(
