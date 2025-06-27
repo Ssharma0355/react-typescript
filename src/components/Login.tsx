@@ -1,9 +1,13 @@
 import React, { useState } from "react";
+import { ILogin } from "./ILogin";
 interface IState{
     user:{
         email:string;
         password:string
     }
+}
+interface LoginState{
+    user : ILogin
 }
 
 export const Login: React.FC = () => {
@@ -22,8 +26,13 @@ export const Login: React.FC = () => {
             }
         })
     }
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>):void => {
+        e.preventDefault();
+        console.log(state.user);
+        alert("Login Successful");
+    }
     return (
-      <form>
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="exampleInputEmail1">Email address</label>
           <input
