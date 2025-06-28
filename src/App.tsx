@@ -15,19 +15,25 @@ import { ShowUsers } from './components/ShowUsers';
 import { FetchUser } from './FetchingData/FetchUser';
 import { DataFetch } from './PracticeFeching/DataFetch';
 
+import {Routes, Route} from "react-router-dom"
+import { Navbar } from './components/Navbar';
+
 function App() {
   let bg={
     backgroundColor:"blue",
     color:"red",
   }
   return (
-    <div>
-      <h1 className='bg-dark' style={bg}>Props</h1>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<DataFetch />} />
+        <Route path="/userlist" element={<ShowUsers />} />
+      </Routes>
       {/* <Customer name="Sachin" age={23} />
       <UsersClass userId={123} />
       <HandleState />
       <HandleStateClass /> */}
-
 
       {/* <Counter />
       <PracticeCounter /> */}
@@ -41,8 +47,7 @@ function App() {
 
       {/* <ShowUsers />
       <FetchUser /> */}
-      <DataFetch />
-    </div>
+    </>
   );
 }
 
