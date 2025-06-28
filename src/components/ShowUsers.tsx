@@ -61,8 +61,6 @@ export const ShowUsers: React.FC=()=>{
                           </tr>
                         );
                     })}
-
-
                 </tbody>
             </table>
         </div>
