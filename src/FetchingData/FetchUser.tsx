@@ -17,10 +17,12 @@ export const FetchUser: React.FC = () => {
 
     // effect to fetch data
     useEffect(()=>{
+        // Set loading state to true before making the request
         setState({
           ...state,
           loading: true
         });
+        // Network request to fetch users
         UserServices.getUsers()
         .then((res)=>setState({...state,loading:false, users:res.data}))
         .catch((error)=>{
