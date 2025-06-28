@@ -13,6 +13,7 @@ import { Looping } from './components/Looping';
 import { DisplayUsers } from './components/DisplayUsers';
 import { ShowUsers } from './components/ShowUsers';
 import { FetchUser } from './FetchingData/FetchUser';
+import { DataFetch } from './PracticeFeching/DataFetch';
 
 function App() {
   let bg={
@@ -38,8 +39,9 @@ function App() {
       {/* <Looping /> */}
       {/* <DisplayUsers /> */}
 
-      <ShowUsers />
-      <FetchUser />
+      {/* <ShowUsers />
+      <FetchUser /> */}
+      <DataFetch />
     </div>
   );
 }
