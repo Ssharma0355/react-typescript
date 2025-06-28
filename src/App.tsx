@@ -12,6 +12,7 @@ import { ConditionalRendering } from './components/ConditionalRendering';
 import { Looping } from './components/Looping';
 import { DisplayUsers } from './components/DisplayUsers';
 import { ShowUsers } from './components/ShowUsers';
+import { FetchUser } from './FetchingData/FetchUser';
 
 function App() {
   let bg={
@@ -38,6 +39,7 @@ function App() {
       {/* <DisplayUsers /> */}
 
       <ShowUsers />
+      <FetchUser />
     </div>
   );
 }
