@@ -16,6 +16,7 @@ import { FetchUser } from './FetchingData/FetchUser';
 import { DataFetch } from './PracticeFeching/DataFetch';
 
 import {Routes, Route} from "react-router-dom"
+import { Navbar } from './components/Navbar';
 
 function App() {
   let bg={
@@ -24,6 +25,7 @@ function App() {
   }
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<DataFetch />} />
         <Route path="/userlist" element={<ShowUsers />} />
