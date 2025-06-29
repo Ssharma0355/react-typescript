@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Iusers } from "../practice/IUsers";
 import { User } from "lucide-react";
 import { Userapiservice } from "../services/Userapiservice";
+import { Link } from "react-router-dom";
 interface IState{
     loading:boolean;
     users:Iusers[];
@@ -55,8 +56,9 @@ export const ShowUsers: React.FC=()=>{
                         return (
                           <tr key={user.id}>
                             <td>{user.id}</td>
+                            <Link to={`users/${user.id}`} className="text-decorection-none">{user.username}</Link>
                             <td>{user.name}</td>
-                            <td>{user.username}</td>
+                        
                             <td>{user.email}</td>
                           </tr>
                         );

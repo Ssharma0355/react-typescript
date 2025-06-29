@@ -17,6 +17,7 @@ import { DataFetch } from './PracticeFeching/DataFetch';
 
 import {Routes, Route} from "react-router-dom"
 import { Navbar } from './components/Navbar';
+import { UserDetail } from './components/UserDetail';
 
 function App() {
   let bg={
@@ -27,8 +28,9 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<DataFetch />} />
-        <Route path="/userlist" element={<ShowUsers />} />
+        <Route path="/" element={<ShowUsers />} />
+        <Route path="/users/:id" element={<UserDetail />} />
+        <Route path="/userlist" element={<DataFetch />} />
       </Routes>
       {/* <Customer name="Sachin" age={23} />
       <UsersClass userId={123} />

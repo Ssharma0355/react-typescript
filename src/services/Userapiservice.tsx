@@ -6,4 +6,11 @@ export class Userapiservice {
     let UserUrl:string = `${this.URL}users`;
     return axios.get(UserUrl);
   }
+
+  public static getSingleUser(userId:string){
+    let SingleUserURL: string = `${this.URL}users/${userId}`;
+    return axios.get(SingleUserURL);
+
+  }
+
 }
