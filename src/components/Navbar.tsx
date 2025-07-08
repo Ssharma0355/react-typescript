@@ -6,6 +6,7 @@ export const Navbar : React.FC =()=>{
    <nav>
     <Link to={'/'}>Home</Link>
     <Link to={"/userlist"}>User list</Link>
+    <Link to={"/copy"}>Copy</Link>
    </nav>
 
     )

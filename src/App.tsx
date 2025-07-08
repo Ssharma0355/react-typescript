@@ -18,6 +18,7 @@ import { DataFetch } from './PracticeFeching/DataFetch';
 import {Routes, Route} from "react-router-dom"
 import { Navbar } from './components/Navbar';
 import { UserDetail } from './components/UserDetail';
+import Cop from './components/Cop';
 
 function App() {
   let bg={
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<ShowUsers />} />
         <Route path="/users/:id" element={<UserDetail />} />
         <Route path="/userlist" element={<DataFetch />} />
+        <Route path='/copy' element={<Cop />}/>
       </Routes>
       {/* <Customer name="Sachin" age={23} />
       <UsersClass userId={123} />

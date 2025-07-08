@@ -15,8 +15,6 @@ interface Istate{
     user:IUserInterface;
 
 }
-
-
 export const UserDetail: React.FC = () => {
     const {id} = useParams<IParams | any>();
     const [state,setState] = useState<Istate>({
